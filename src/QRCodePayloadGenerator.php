@@ -72,7 +72,7 @@ class QRCodePayloadGenerator
 
         try {
             $payload->setVendorData($locationData->serializeToString());
-            return base64_encode($payload->serializeToString());
+            return Base64UrlUtil::encode($payload->serializeToString());
         } catch (\Exception $e) {
             throw new GenerateException($e);
         }

@@ -32,7 +32,7 @@ class QRCodePayloadReader
         $internalPayload = new QRCodePayload();
         $internalLocationData = new CWALocationData();
         try {
-            $internalPayload->mergeFromString(base64_decode($payload));
+            $internalPayload->mergeFromString(Base64UrlUtil::decode($payload));
             $internalLocationData->mergeFromString($internalPayload->getVendorData());
         } catch (\Exception $e) {
             throw new ReadException($e);
