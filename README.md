@@ -2,7 +2,7 @@
 
 This PHP library allows generating Check-In URLs for the [Corona Warn App](https://www.coronawarn.app/) which can then be used to generate a QR code from. Moreover, event details can be extracted from existing Check-In URLs.
 
-This library does not generate a QR code image. A dedicated library for QR code generation can be used for that, either in PHP or client side using JavScript. A QR code generated from the check-in URL will open the [Corona Warn App](https://www.coronawarn.app/) on mobile devices.
+This library does not generate a QR code image. A dedicated library for QR code generation can be used for that, either in PHP or client side using JavaScript. A QR code generated from the check-in URL will open the [Corona Warn App](https://www.coronawarn.app/) on mobile devices.
 
 ## Installation
 
